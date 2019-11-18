@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DockerSmokeTestSuite" parallel="tests">
+<!--  <suite name="DockerSmokeTestSuite" configfailurepolicy="continue">-->
+
+<listeners>
+  <listener class-name="hostgator.Listener"/>
+</listeners>
+  <test name="DockerTests">
+    <classes>
+      <class name="hostgator.DockerTests"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="DockerTests2">
+    <classes>
+      <class name="hostgator.DockerTests"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->

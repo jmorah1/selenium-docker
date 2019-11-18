@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DockerSmokeTestSuite" parallel="tests">
+<!--  <suite name="DockerSmokeTestSuite" configfailurepolicy="continue">-->
+
+<listeners>
+  <listener class-name="hostgator.Listener"/>
+</listeners>
+
+  <test name="VPSSignup">
+    <classes>
+      <class name="hostgator.VPSSignup"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="SharedPkgSignup">
+    <classes>
+      <class name="hostgator.SharedPkgSignup"/>
+    </classes>
+  </test> <!-- Test -->
+
+</suite> <!-- Suite -->
