@@ -32,8 +32,8 @@ public class DockerTests extends BaseTest {
 		driver.get("http://www.apple.com/");
 		log.info("Title of page is "+driver.getCurrentUrl());
 		log.info("URL of page is "+driver.getTitle());
-		System.out.println("Page Title 2 is " + driver.getTitle());
+		System.out.println("Page Title 3 is " + driver.getTitle());
 		Thread.sleep(10000);
-		log.info("Got to Test2");
+		log.info("Got to Test3/////////////////////findme//////");
 	}
 }
